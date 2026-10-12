@@ -2,19 +2,16 @@ import type { SocialLink } from "./types";
 
 /**
  * Single source of truth for personal details.
- *
- * TODO: replace the placeholder values below with your real information.
- * Nothing here should be shipped with invented claims, links, or metrics.
  */
 export const site = {
-  name: "Your Name",
-  handle: "yourhandle",
-  role: "Software Developer",
-  location: "",
+  name: "Mohamed A. Abdel Fattah",
+  handle: "SssiiiSssii1",
+  role: "Software Engineer",
+  location: "Egypt",
 
   /**
    * A short, personal tagline connecting engineering with curiosity and
-   * scientific thinking. Edit freely — keep it honest to how you work.
+   * scientific thinking.
    */
   tagline:
     "I build software the way I try to make sense of the world: form a hypothesis, ship it, watch it break, and let the evidence decide what survives.",
@@ -23,6 +20,7 @@ export const site = {
   interests: [
     "backend systems",
     "software design",
+    "open source",
     "philosophy of science",
     "epistemology",
     "scientific reasoning",
@@ -35,14 +33,15 @@ export const site = {
       href: "https://www.linkedin.com/in/mhamedahmed/",
       icon: "linkedin",
     },
-    { label: "Email", href: "mailto:you@example.com", icon: "mail" },
+    { label: "Email", href: "mailto:mohamedbenahmedabdelfattah@gmail.com", icon: "mail" },
   ] satisfies SocialLink[],
 
   /** Short paragraphs shown in the About section. */
   about: [
-    "TODO: two or three sentences on your software engineering background — where you have worked, what you tend to build, and the kind of problems you enjoy.",
-    "TODO: how you approach problem-solving. What you reach for first, how you reduce uncertainty, and when you stop and question your own assumptions.",
-    "TODO: what draws you to the philosophy of science — the throughline between how you reason about systems and how you reason about knowledge.",
+    "I specialize in designing and building robust backend systems, focusing on clean architecture, scalability, and predictable behavior under load.",
+    "I approach problem-solving by stripping away noise to reach first principles, measuring constraints carefully, and letting empirical feedback drive the design.",
+    "An active advocate for open source, I regularly contribute to community projects and share tools aimed at solving practical developer challenges.",
+    "Drawn to epistemology and the philosophy of science, I view software engineering as a continuous process of modeling reality and systematically reducing uncertainty.",
   ],
 
   /** Closing line for the Contact section. */
