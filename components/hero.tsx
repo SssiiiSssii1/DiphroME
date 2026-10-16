@@ -45,7 +45,7 @@ export function Hero() {
       className="relative overflow-hidden"
     >
       <div className="mx-auto grid w-full max-w-5xl gap-12 px-6 pb-16 pt-20 sm:pt-28 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:gap-16 lg:pb-28">
-        <div>
+        <div className="min-w-0">
           <p className="flex items-center gap-2 font-mono text-xs tracking-widest text-accent-dim">
             <span
               className="pulse-dot size-1.5 rounded-full bg-accent"
@@ -56,7 +56,7 @@ export function Hero() {
 
           <h1
             id="hero-heading"
-            className="mt-5 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl"
+            className="mt-5 text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl"
           >
             {site.name}
           </h1>
@@ -64,6 +64,17 @@ export function Hero() {
           <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted">
             {site.tagline}
           </p>
+
+          <ul className="mt-7 flex flex-wrap gap-2">
+            {site.focus.map((item) => (
+              <li
+                key={item}
+                className="rounded border border-line bg-elevated/60 px-2.5 py-1 font-mono text-xs text-foreground/90"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
 
           <SocialLinks className="mt-8" />
         </div>

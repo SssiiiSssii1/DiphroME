@@ -6,7 +6,7 @@
   --color-elevated: #111a16;
   --color-foreground: #d7e4dd;
   --color-muted: #8ba79a;
-  --color-faint: #5d7268;
+  --color-faint: #6f8a7d;
   --color-accent: #7fe0a6;
   --color-accent-dim: #4f8f6d;
   --color-line: #1b2822;
@@ -17,6 +17,7 @@
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-arabic: var(--font-noto-naskh), "Noto Naskh Arabic", serif;
 }
 
 :root {
@@ -38,7 +39,9 @@ body {
   color: var(--color-foreground);
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
 }
 
 ::selection {

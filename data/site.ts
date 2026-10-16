@@ -6,24 +6,28 @@ import type { SocialLink } from "./types";
 export const site = {
   name: "Mohamed A. Abdel Fattah",
   handle: "SssiiiSssii1",
-  role: "Software Engineer",
-  location: "Home is where we are",
+  role: "Software Enginner",
+  location: "Home Where We Are",
 
   /**
-   * A short, personal tagline connecting engineering with curiosity and
-   * scientific thinking.
+   * The hero summary, written in first person: who I am, what I work on,
+   * and what I care about beyond the code.
    */
   tagline:
-    "I build software the way I try to make sense of the world: form a hypothesis, ship it, watch it break, and let the evidence decide what survives.",
+    "I'm a software enginner with three years of experience building systems that have to hold up in production. I contribute to open source, and I'm drawn to cybersecurity and bioinformatics — fields where the details genuinely matter. Above all, I care about people: I think technology is only worth building when it improves human lives.",
+
+  /** Short labels shown under the hero summary to make my focus scannable. */
+  focus: ["Open source", "Cybersecurity", "Bioinformatics", "Humanity", "philosophy"],
 
   /** Shown in the interactive terminal and available for elsewhere. */
   interests: [
     "backend systems",
-    "software design",
     "open source",
-    "philosophy of science",
-    "epistemology",
-    "scientific reasoning",
+    "cybersecurity",
+    "bioinformatics",
+    "human nature",
+    "philosophy",
+    "how we know what we know",
   ],
 
   links: [
@@ -40,8 +44,8 @@ export const site = {
   about: [
     "I specialize in designing and building robust backend systems, focusing on clean architecture, scalability, and predictable behavior under load.",
     "I approach problem-solving by stripping away noise to reach first principles, measuring constraints carefully, and letting empirical feedback drive the design.",
-    "An active advocate for open source, I regularly contribute to community projects and share tools aimed at solving practical developer challenges.",
-    "Drawn to epistemology and the philosophy of science, I view software engineering as a continuous process of modeling reality and systematically reducing uncertainty.",
+    "I am an active open-source contributor, and outside of work I explore cybersecurity and bioinformatics — two fields where correctness is not optional and the details are the whole point.",
+    "Above all, I am interested in people: in human nature, in philosophy, and in how technology can be used to make life better for others rather than merely faster for a few.",
   ],
 
   /** Closing line for the Contact section. */

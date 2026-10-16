@@ -6,6 +6,7 @@ import { OpenSource } from "@/components/open-source";
 import { Philosophy } from "@/components/philosophy";
 import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
+import { Writing } from "@/components/writing";
 import { site } from "@/data/site";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <OpenSource />
         <Skills />
         <Philosophy />
+        <Writing />
         <Contact />
       </main>
       <footer className="border-t border-line">

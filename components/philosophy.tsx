@@ -24,7 +24,7 @@ export function Philosophy() {
                 {String(index + 1).padStart(2, "0")}
               </span>
               <div>
-                <h3 className="text-lg font-medium text-foreground">
+                <h3 className="text-balance text-lg font-medium text-foreground">
                   {reflection.title}
                 </h3>
                 <p className="mt-2 text-pretty leading-relaxed text-muted">
@@ -40,13 +40,31 @@ export function Philosophy() {
         {quotations.map((quotation) => (
           <li key={quotation.author}>
             <Reveal className="h-full">
-              <figure className="flex h-full flex-col rounded-xl border border-line bg-surface/40 p-6">
-                <blockquote className="flex-1 text-pretty leading-relaxed text-foreground/90 italic">
+              <figure className="flex h-full flex-col rounded-xl border border-line bg-surface/40 p-6 transition-colors hover:border-line-strong">
+                {quotation.arabic ? (
+                  <p
+                    lang="ar"
+                    dir="rtl"
+                    className="text-balance font-arabic text-xl leading-loose text-accent-dim"
+                  >
+                    {quotation.arabic}
+                  </p>
+                ) : null}
+                <blockquote
+                  className={`flex-1 text-pretty leading-relaxed text-foreground/90 italic${
+                    quotation.arabic ? " mt-4 border-t border-line pt-4" : ""
+                  }`}
+                >
                   &ldquo;{quotation.text}&rdquo;
                 </blockquote>
                 <figcaption className="mt-4 font-mono text-xs text-faint">
-                  {quotation.author},{" "}
-                  <cite className="not-italic">{quotation.source}</cite>
+                  {quotation.author}
+                  {quotation.source ? (
+                    <>
+                      {", "}
+                      <cite className="not-italic">{quotation.source}</cite>
+                    </>
+                  ) : null}
                 </figcaption>
               </figure>
             </Reveal>

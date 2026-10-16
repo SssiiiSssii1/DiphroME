@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Noto_Naskh_Arabic } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,19 +12,44 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const notoNaskhArabic = Noto_Naskh_Arabic({
+  variable: "--font-noto-naskh",
+  subsets: ["arabic"],
+  weight: ["400", "500", "600", "700"],
+});
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://diphro-me.vercel.app"),
   title: {
-    default: "Software Developer",
-    template: "%s",
+    default: "Mohamed A. Abdel Fattah — Software Enginner",
+    template: "%s — Mohamed A. Abdel Fattah",
   },
   description:
-    "Software developer working across backend systems and the philosophy of how we come to know what we know.",
+    "Backend developer with three years of experience, active open-source contributor, and a student of cybersecurity and bioinformatics — building technology that serves people.",
+  authors: [{ name: "Mohamed A. Abdel Fattah", url: "https://github.com/SssiiiSssii1" }],
+  creator: "Mohamed A. Abdel Fattah",
+  keywords: [
+    "backend developer",
+    "NestJS",
+    "open source",
+    "cybersecurity",
+    "bioinformatics",
+    "philosophy",
+  ],
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
-    title: "Software Developer",
+    url: "/",
+    siteName: "Mohamed A. Abdel Fattah",
+    title: "Mohamed A. Abdel Fattah — Software Enginner",
     description:
-      "Software developer working across backend systems and the philosophy of how we come to know what we know.",
+      "Backend developer with three years of experience, active open-source contributor, and a student of cybersecurity and bioinformatics — building technology that serves people.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Mohamed A. Abdel Fattah — Software Enginner",
+    description:
+      "Backend developer, open-source contributor, and a student of cybersecurity and bioinformatics.",
   },
 };
 
@@ -32,7 +57,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full`}
+      className={`${geistSans.variable} ${geistMono.variable} ${notoNaskhArabic.variable} h-full`}
     >
       <body className="relative flex min-h-full flex-col bg-background text-foreground">
         <div className="grid-fixed" aria-hidden="true" />

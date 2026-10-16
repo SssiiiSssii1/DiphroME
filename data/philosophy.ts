@@ -38,15 +38,20 @@ export const quotations: Quotation[] = [
     text: "We ought not be ashamed of appreciating the truth and of acquiring it wherever it comes from, even if it comes from races distant and nations different from us.",
     author: "Al-Kindi",
     source: "On First Philosophy (Fi al-Falsafa al-Ula), 9th century",
+    arabic:
+      "وينبغي لنا أن لا نستحي من استحسان الحق، واقتناء الحق من أين أتى، وإن أتى من الأجناس القاصية عنا، والأمم المباينة، فإنه لا شيء أولى بطالب الحق من الحق.",
   },
   {
     text: "The duty of the man who investigates the writings of scientists, if learning the truth is his goal, is to make himself an enemy of all that he reads and, attacking it from every side, place it under suspicion.",
     author: "Ibn al-Haytham (Alhazen)",
     source: "Doubts Concerning Ptolemy (Al-Shukuk 'ala Batlamyus), 11th century",
+    arabic:
+      "فالواجب على الناظر في كتب العلوم، إذا كان غرضه معرفة الحقائق، أن يجعل نفسه خصماً لكل ما ينظر فيه، ويجيل فكره في متنه وفي جميع حواشيه، ويخصمه من جميع جهاته ونواحيه.",
   },
   {
-    text: "The past resembles the future more than one drop of water resembles another.",
-    author: "Ibn Khaldun",
-    source: "The Muqaddimah, 1377",
+    text: "Know, my brother, that if you set out to know the truth through men, without relying on your own insight, your effort is wasted. For the learned man among men is only like the sun or a lamp — he gives light. Then look with your own eyes; for if you are blind, what good will the lamp or the sun do you? Whoever relies on imitation is utterly ruined.",
+    author: "Abu Hamid Muhammad al-Ghazali",
+    arabic:
+      "فاعلم يا أخي أنك متى كنت ذاهبًا إلى معرفة الحق بالرجال، من غير أن تتكل على بصيرتك، فقد ضل سعيك. فإن العالم من الرجال إنما هو كالشمس أو كالسراج، يعطي الضوء. ثم انظر ببصرك، فإن كنت أعمى، فما يغني عنك السراج والشمس؟ فمن عوّل على التقليد هلك هلاكًا مطلقًا.",
   },
 ];

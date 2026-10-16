@@ -21,17 +21,25 @@ export function Projects() {
           {projects.map((project, index) => (
             <li key={project.name}>
               <Reveal delay={index * 70}>
-                <article className="group rounded-xl border border-line bg-surface/40 p-6 transition-colors hover:border-line-strong">
-                  <div className="flex flex-wrap items-start justify-between gap-4">
-                    <h3 className="text-lg font-medium text-foreground">
-                      {project.name}
-                    </h3>
+                <article className="group rounded-xl border border-line bg-surface/40 p-6 transition-colors hover:border-line-strong sm:p-7">
+                  <div className="flex flex-wrap items-start justify-between gap-x-6 gap-y-3">
+                    <div className="flex min-w-0 items-baseline gap-3">
+                      <span
+                        className="font-mono text-xs text-accent-dim"
+                        aria-hidden="true"
+                      >
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <h3 className="text-balance text-lg font-medium text-foreground">
+                        {project.name}
+                      </h3>
+                    </div>
                     {project.href ? (
                       <a
                         href={project.href}
                         target="_blank"
                         rel="noreferrer noopener"
-                        className="inline-flex items-center gap-1.5 font-mono text-xs text-muted transition-colors hover:text-accent"
+                        className="inline-flex shrink-0 items-center gap-1.5 font-mono text-xs text-muted transition-colors hover:text-accent"
                       >
                         <GitHubIcon className="size-4" />
                         source
@@ -45,7 +53,7 @@ export function Projects() {
                   </p>
 
                   {project.note ? (
-                    <p className="mt-3 max-w-2xl text-sm leading-relaxed text-faint">
+                    <p className="mt-2 max-w-2xl text-pretty text-sm leading-relaxed text-faint">
                       {project.note}
                     </p>
                   ) : null}
@@ -54,7 +62,7 @@ export function Projects() {
                     {project.stack.map((tech) => (
                       <li
                         key={tech}
-                        className="rounded border border-line px-2 py-0.5 font-mono text-xs text-accent-dim"
+                        className="rounded border border-line bg-elevated/60 px-2.5 py-1 font-mono text-xs text-foreground/90"
                       >
                         {tech}
                       </li>

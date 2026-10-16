@@ -12,7 +12,7 @@ export const projects: Project[] = [
     note: "Built subscription and feature-gating with tenant-aware access control and reusable CRUD infrastructure; integrated S3/MinIO storage, SSE real-time notifications, email queues, and Paymob payments.",
   },
   {
-    name: "Mohamed Ahmed LMS Project",
+    name: "LMS Project",
     description:
       "Built a Learning Management System backend enabling admins to manage courses, assignments, and student records through RESTful APIs secured with JWT authentication and role-based access control.",
     stack: ["NestJS", "TypeScript", "PostgreSQL", "REST APIs", "AWS S3"],

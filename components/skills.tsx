@@ -15,7 +15,7 @@ export function Skills() {
           <li key={group.title}>
             <Reveal
               delay={index * 70}
-              className="h-full rounded-xl border border-line bg-surface/40 p-6"
+              className="h-full rounded-xl border border-line bg-surface/40 p-6 transition-colors hover:border-line-strong"
             >
               <h3 className="font-mono text-sm text-accent">{group.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-faint">
