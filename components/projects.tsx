@@ -9,7 +9,7 @@ export function Projects() {
       id="projects"
       eyebrow="// projects"
       title="Selected work"
-      intro="Real projects, with the technologies they are built on."
+      intro="Production work — the backend systems I have designed and built, with the technologies they run on."
     >
       {projects.length === 0 ? (
         <p className="max-w-xl rounded-lg border border-dashed border-line-strong bg-surface/40 px-5 py-6 font-mono text-sm text-faint">

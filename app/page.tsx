@@ -1,5 +1,6 @@
 import { About } from "@/components/about";
 import { Contact } from "@/components/contact";
+import { Experiments } from "@/components/experiments";
 import { Hero } from "@/components/hero";
 import { Nav } from "@/components/nav";
 import { OpenSource } from "@/components/open-source";
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <About />
         <Projects />
+        <Experiments />
         <OpenSource />
         <Skills />
         <Philosophy />

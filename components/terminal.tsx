@@ -118,9 +118,9 @@ export function Terminal({ user, entries }: TerminalProps) {
     <div className="overflow-hidden rounded-xl border border-line-strong bg-surface/70 glow backdrop-blur">
       <div className="flex items-center gap-2 border-b border-line px-4 py-3">
         <span className="flex gap-1.5" aria-hidden="true">
-          <span className="size-2.5 rounded-full bg-faint/60" />
-          <span className="size-2.5 rounded-full bg-faint/60" />
-          <span className="size-2.5 rounded-full bg-accent-dim/70" />
+          <span className="size-2.5 rounded-full bg-red-500" />
+          <span className="size-2.5 rounded-full bg-yellow-400" />
+          <span className="size-2.5 rounded-full bg-green-500" />
         </span>
         <span className="mx-auto font-mono text-xs text-faint">
           {user}@portfolio — reference
@@ -148,11 +148,10 @@ export function Terminal({ user, entries }: TerminalProps) {
               aria-controls="terminal-panel"
               tabIndex={selected ? 0 : -1}
               onClick={() => setActive(index)}
-              className={`rounded border px-2.5 py-1 font-mono text-xs transition-colors ${
-                selected
-                  ? "border-accent-dim/60 bg-accent/10 text-accent"
-                  : "border-line text-muted hover:border-line-strong hover:text-foreground"
-              }`}
+              className={`rounded border px-2.5 py-1 font-mono text-xs transition-colors ${selected
+                ? "border-accent-dim/60 bg-accent/10 text-accent"
+                : "border-line text-muted hover:border-line-strong hover:text-foreground"
+                }`}
             >
               {entry.command}
             </button>

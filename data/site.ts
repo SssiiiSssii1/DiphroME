@@ -17,7 +17,7 @@ export const site = {
     "I'm a software enginner with three years of experience building systems that have to hold up in production. I contribute to open source, and I'm drawn to cybersecurity and bioinformatics — fields where the details genuinely matter. Above all, I care about people: I think technology is only worth building when it improves human lives.",
 
   /** Short labels shown under the hero summary to make my focus scannable. */
-  focus: ["Open source", "Cybersecurity", "Bioinformatics", "Humanity", "philosophy"],
+  focus: ["Back End", "Open source", "Cybersecurity", "Bioinformatics", "Humanity", "philosophy"],
 
   /** Shown in the interactive terminal and available for elsewhere. */
   interests: [
