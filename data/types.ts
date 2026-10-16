@@ -19,6 +19,13 @@ export type Project = {
   note?: string;
 };
 
+export type OpenSourceProject = {
+  /** Organisation or project name, e.g. "NestJS". */
+  name: string;
+  /** Optional one-line note on the contribution. */
+  note?: string;
+};
+
 export type SkillGroup = {
   title: string;
   /** One line on how these fit together. */

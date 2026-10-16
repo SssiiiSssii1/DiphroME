@@ -1,4 +1,5 @@
 import { site } from "@/data/site";
+import { openSourceProjects } from "@/data/open-source";
 import { skillGroups } from "@/data/skills";
 import { Reveal } from "./reveal";
 import { SocialLinks } from "./social-links";
@@ -14,6 +15,13 @@ const terminalEntries: TerminalEntry[] = [
     id: "interests",
     command: "cat interests.md",
     lines: site.interests.map((interest) => `- ${interest}`),
+  },
+  {
+    id: "open-source",
+    command: "ls open-source/",
+    lines: openSourceProjects.map(
+      (project) => `- ${project.name}${project.note ? ` — ${project.note}` : ""}`,
+    ),
   },
   {
     id: "skills",

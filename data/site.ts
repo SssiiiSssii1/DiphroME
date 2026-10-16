@@ -7,7 +7,7 @@ export const site = {
   name: "Mohamed A. Abdel Fattah",
   handle: "SssiiiSssii1",
   role: "Software Engineer",
-  location: "Egypt",
+  location: "Home is where we are",
 
   /**
    * A short, personal tagline connecting engineering with curiosity and

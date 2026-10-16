@@ -34,4 +34,19 @@ export const quotations: Quotation[] = [
     author: "Karl Popper",
     source: "Conjectures and Refutations, 1963",
   },
+  {
+    text: "We ought not be ashamed of appreciating the truth and of acquiring it wherever it comes from, even if it comes from races distant and nations different from us.",
+    author: "Al-Kindi",
+    source: "On First Philosophy (Fi al-Falsafa al-Ula), 9th century",
+  },
+  {
+    text: "The duty of the man who investigates the writings of scientists, if learning the truth is his goal, is to make himself an enemy of all that he reads and, attacking it from every side, place it under suspicion.",
+    author: "Ibn al-Haytham (Alhazen)",
+    source: "Doubts Concerning Ptolemy (Al-Shukuk 'ala Batlamyus), 11th century",
+  },
+  {
+    text: "The past resembles the future more than one drop of water resembles another.",
+    author: "Ibn Khaldun",
+    source: "The Muqaddimah, 1377",
+  },
 ];
