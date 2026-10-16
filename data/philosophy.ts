@@ -25,22 +25,6 @@ export const reflections: Reflection[] = [
 
 export const quotations: Quotation[] = [
   {
-    text: "The first principle is that you must not fool yourself—and you are the easiest person to fool.",
-    author: "Richard Feynman",
-    source: "\u201cCargo Cult Science,\u201d Caltech commencement address, 1974",
-  },
-  {
-    text: "Every genuine test of a theory is an attempt to falsify it, or refute it.",
-    author: "Karl Popper",
-    source: "Conjectures and Refutations, 1963",
-  },
-  {
-    author: "Al-Kindi",
-    authorArabic: "الكندي",
-    arabic:
-      "وينبغي لنا أن لا نستحي من استحسان الحق، واقتناء الحق من أين أتى، وإن أتى من الأجناس القاصية عنا، والأمم المباينة، فإنه لا شيء أولى بطالب الحق من الحق.",
-  },
-  {
     author: "Abu Hamid Muhammad al-Ghazali",
     authorArabic: "أبو حامد محمد الغزالي",
     arabic:
