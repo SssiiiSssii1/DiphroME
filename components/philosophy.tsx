@@ -45,20 +45,30 @@ export function Philosophy() {
                   <p
                     lang="ar"
                     dir="rtl"
-                    className="text-balance font-arabic text-xl leading-loose text-accent-dim"
+                    className={`text-balance font-arabic text-xl leading-loose text-accent-dim${
+                      quotation.text ? "" : " flex-1"
+                    }`}
                   >
                     {quotation.arabic}
                   </p>
                 ) : null}
-                <blockquote
-                  className={`flex-1 text-pretty leading-relaxed text-foreground/90 italic${
-                    quotation.arabic ? " mt-4 border-t border-line pt-4" : ""
-                  }`}
-                >
-                  &ldquo;{quotation.text}&rdquo;
-                </blockquote>
+                {quotation.text ? (
+                  <blockquote
+                    className={`flex-1 text-pretty leading-relaxed text-foreground/90 italic${
+                      quotation.arabic ? " mt-4 border-t border-line pt-4" : ""
+                    }`}
+                  >
+                    &ldquo;{quotation.text}&rdquo;
+                  </blockquote>
+                ) : null}
                 <figcaption className="mt-4 font-mono text-xs text-faint">
-                  {quotation.author}
+                  {quotation.authorArabic ? (
+                    <span lang="ar" dir="rtl" className="font-arabic">
+                      {quotation.authorArabic}
+                    </span>
+                  ) : (
+                    quotation.author
+                  )}
                   {quotation.source ? (
                     <>
                       {", "}

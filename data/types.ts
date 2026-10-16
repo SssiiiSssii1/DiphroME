@@ -56,8 +56,11 @@ export type Reflection = {
 };
 
 export type Quotation = {
-  text: string;
+  /** English text. Omit when only the original-language text is shown. */
+  text?: string;
   author: string;
+  /** Author name in the original language. Shown right-to-left when present. */
+  authorArabic?: string;
   /** Work and year, so the source can be verified. Omit if unverified. */
   source?: string;
   /** Original-language text, shown right-to-left. Omit if not verified. */
