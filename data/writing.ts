@@ -6,7 +6,7 @@ import type { Writing } from "./types";
  */
 export const writings: Writing[] = [
   {
-    title: "طين جُبلتُ على الخطايا",
+    title: "ثنائية الخير والشر(0و1)",
     description:
       "Essays in Arabic at the meeting point of philosophy, logic, and software — where an argument is taken as seriously as a program.",
     href: "https://diphro.blogspot.com",
