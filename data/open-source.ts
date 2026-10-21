@@ -11,4 +11,7 @@ import type { OpenSourceProject } from "./types";
 export const openSourceProjects: OpenSourceProject[] = [
   { name: "NestJS" },
   { name: "GitLab" },
+  { name: "Caddy Server" },
+  { name: "TypeOrm" },
+
 ];
