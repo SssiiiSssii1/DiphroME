@@ -21,7 +21,7 @@ export function Projects() {
           {projects.map((project, index) => (
             <li key={project.name}>
               <Reveal delay={index * 70}>
-                <article className="group rounded-xl border border-line bg-surface/40 p-6 transition-colors hover:border-line-strong sm:p-7">
+                <article className="terminal-card group rounded-xl border border-line bg-surface/40 p-6 transition-colors hover:border-line-strong sm:p-7">
                   <div className="flex flex-wrap items-start justify-between gap-x-6 gap-y-3">
                     <div className="flex min-w-0 items-baseline gap-3">
                       <span

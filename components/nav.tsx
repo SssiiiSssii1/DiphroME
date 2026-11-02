@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { site } from "@/data/site";
+import { TerminalEasterEgg } from "./terminal-easter-egg";
 
 const items = [
   { href: "#about", label: "About" },
@@ -47,13 +48,16 @@ export function Nav() {
         aria-label="Primary"
         className="mx-auto flex w-full max-w-5xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-6 py-4"
       >
-        <a
-          href="#top"
-          className="font-mono text-sm text-foreground transition-colors hover:text-accent"
-        >
-          <span className="text-accent">~/</span>
-          {site.handle}
-        </a>
+        <div className="flex items-center gap-2">
+          <a
+            href="#top"
+            className="font-mono text-sm text-foreground transition-colors hover:text-accent"
+          >
+            <span className="text-accent">~/</span>
+            {site.handle}
+          </a>
+          <TerminalEasterEgg />
+        </div>
         <ul className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs sm:text-sm">
           {items.map((item) => {
             const isActive = active === item.href;

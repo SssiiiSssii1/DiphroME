@@ -13,5 +13,6 @@ export const openSourceProjects: OpenSourceProject[] = [
   { name: "GitLab" },
   { name: "Caddy Server" },
   { name: "TypeOrm" },
+  {name: "axum"}
 
 ];

@@ -21,7 +21,7 @@ export function Experiments() {
           {experiments.map((experiment, index) => (
             <li key={experiment.name}>
               <Reveal delay={index * 70} className="h-full">
-                <article className="group flex h-full flex-col rounded-xl border border-line bg-surface/40 p-5 transition-colors hover:border-line-strong">
+                <article className="terminal-card group flex h-full flex-col rounded-xl border border-line bg-surface/40 p-5 transition-colors hover:border-line-strong">
                   <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
                     <div className="flex min-w-0 items-baseline gap-3">
                       <span
